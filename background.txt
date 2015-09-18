@@ -1,0 +1,43 @@
+	* Phase 1 
+		* Written in python
+		* Can handle multiple products
+		* Command line tool, does various operations by changing command line options.  tcm addcase, tcm generate_testplan etc.
+			* tables:
+				* cases
+					* Last updated timestamp (for marking results obsolete)
+					* Last pass result
+					* Last fail result
+					* Title
+					* Prerequisites/Notes/links to test data
+					* Steps
+
+				* projects
+					* Title
+					* Description/notes
+					* test case master list
+					* Associated plans
+
+				* runs/results
+					* Description/notes 
+						* eg 10% coverage, spaced repitition.  50% coverage, random, 30% coverage, cases flagged with 'File I/O', 100% coverage, 12% coverage custom: blah blah
+
+					* lists of test cases (test plans)
+					* proposed
+					* completed
+
+
+			* Text fields should allow html tags
+			* addcase, delete case, getcase, replacecase, set case archive
+			* add project, remove project, set project active, set project archive, get project desc, replace project desc
+			* Cases can be in more than one project; relational
+
+		* Database is XML
+
+	* Phase 2
+		* Database is mysql
+
+	* Phase 3
+		* Web UI
+		* FE says I should use PHP + Symfony
+
+
